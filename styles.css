@@ -1,0 +1,329 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: #1a1a1a;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.header {
+    background: linear-gradient(135deg, #000000, #1a1a1a);
+    color: white;
+    padding: 150px 20px;
+    position: relative;
+    text-align: center;
+}
+
+.profile-pic {
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    border: 5px solid #64ffda;
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
+}
+
+.profile-pic img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 200px; /* Adjust this for larger max dimensions */
+    max-height: 200px;
+    object-fit: cover; /* Ensures image scaling without distortion */
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #64ffda;
+    margin-bottom: 20px;
+}
+
+.progress-bar {
+    background: linear-gradient(135deg, #64ffda, #007bff);
+}
+
+.card {
+    border: 1px solid #64ffda;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.projects-carousel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    animation: move-cards 10s linear infinite;
+}
+
+.project-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    position: relative;
+    flex: 1 0 30%; /* Ensures responsive card layout */
+    max-width: 300px;
+}
+
+.project-card:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+/* Animate cards to move horizontally */
+@keyframes move-cards {
+    0% {
+        transform: translateX(0%);
+    }
+    50% {
+        transform: translateX(-10%);
+    }
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+/* Skills Section */
+.skill-card {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(100, 255, 218, 0.8);
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #64ffda;
+}
+
+.skill-card .progress {
+    background: #343a40;
+    height: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.skill-card .progress-bar {
+    background: linear-gradient(135deg, #64ffda, #007bff);
+    line-height: 25px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Pop-up window style */
+.skill-card .popup-window {
+    position: absolute;
+    top: 110%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 218, 0.8);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    z-index: 10;
+}
+
+/* Show the pop-up window on hover */
+.skill-card:hover .popup-window {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Certificates Section */
+.certificate-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.certificate-card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(100, 255, 218, 0.8);
+}
+
+.certificate-card img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.certificate-card:hover img {
+    opacity: 1;
+    z-index: 5;
+}
+
+.certificate-card h4,
+.certificate-card p {
+    position: relative;
+    z-index: 10;
+}
+
+/* Contact Section */
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.contact-link:hover {
+    transform: scale(1.2);
+    color: #64ffda;
+}
+
+.contact-link i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #121212;
+    color: #e0e0e0;
+    scroll-behavior: smooth;
+}
+
+/* Section styling */
+.skills {
+    padding: 60px 0;
+    background: #121212;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #64ffda;
+    margin-bottom: 40px;
+}
+
+/* Skill Card styling */
+.skill-card {
+    perspective: 1000px; /* Allows the 3D effect */
+    margin-bottom: 30px;
+}
+
+/* Inner structure for the flip effect */
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.skill-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front of the card (shows skill name and progress) */
+.card-front,
+.card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Styling for the front of the card */
+.card-front {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.card-front h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #64ffda;
+}
+
+.card-front .progress {
+    width: 80%;
+    background: #343a40;
+    height: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.card-front .progress-bar {
+    background: linear-gradient(135deg, #64ffda, #007bff);
+    line-height: 20px;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+
+/* Styling for the back of the card (shows skill description) */
+.card-back {
+    background: #1f1f1f;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transform: rotateY(180deg); /* Initially hidden behind */
+}
+
+.card-back p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Responsive layout for skill cards */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 1 0 100%;
+        margin-bottom: 20px;
+    }
+}

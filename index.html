@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sagar Kumar | Portfolio</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#header">Sagar Kumar</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header" class="header text-center">
+        <div class="container">
+            <div class="profile-pic">
+                <img src="your-image.jpg" alt="Sagar Kumar" id="dynamic-profile-pic">
+            </div>
+            <h1>Sagar Kumar</h1>
+            <p>M.Tech in Computer Science & Engineering, IIT Kanpur</p>
+            <a href="#about" class="btn btn-primary mt-4">Learn More</a>
+        </div>
+    </header>
+    
+
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <p>I am a passionate data scientist and AI enthusiast with expertise in machine learning, data analysis, and software development. Currently pursuing M.Tech at IIT Kanpur, I aim to solve complex problems through technology.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education py-5 bg-dark text-light">
+        <div class="container">
+            <h2 class="section-title text-center">Educational Qualifications</h2>
+            <ul class="timeline">
+                <li>
+                    <h5>M.Tech in Computer Science & Engineering</h5>
+                    <p>IIT Kanpur, 2024-Present</p>
+                </li>
+                <li>
+                    <h5>B.Tech in Information Technology</h5>
+                    <p>REC Bijnor, 2020-2024 (CGPA: 7.59)</p>
+                </li>
+                <li>
+                    <h5>Class XII</h5>
+                    <p>U.P. State Board, 69.40%</p>
+                </li>
+                <li>
+                    <h5>Class X</h5>
+                    <p>U.P. State Board, 82.66%</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-5">
+        <div class="container text-center">
+            <h2 class="section-title">Skills</h2>
+            <div class="row">
+                <!-- Skill Card 1 -->
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Python</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 90%;">90%</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <p>Worked on multiple Python-based projects, including data analysis and machine learning.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 2 -->
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Machine Learning</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 85%;">85%</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <p>Built machine learning models for forecasting, sentiment analysis, and anomaly detection.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Skill Card 3 -->
+                <div class="col-md-4">
+                    <div class="skill-card">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <h3>Data Analysis</h3>
+                                <div class="progress">
+                                    <div class="progress-bar" style="width: 75%;">75%</div>
+                                </div>
+                            </div>
+                            <div class="card-back">
+                                <p>Performed data cleaning, visualization, and statistical analysis using Pandas and Matplotlib.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more skill cards as needed -->
+            </div>
+        </div>
+    </section>
+    
+    <section id="certificates" class="certificates py-5 bg-dark text-light">
+        <div class="container text-center">
+            <h2 class="section-title">Certificates</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <h4>Machine Learning Certification</h4>
+                        <p>Issued by Coursera (2023)</p>
+                        <img src="certificates/machine-learning.png" alt="Machine Learning Certificate">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <h4>Python for Data Science</h4>
+                        <p>Issued by DataCamp (2022)</p>
+                        <img src="certificates/python-data-science.png" alt="Python Certificate">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="certificate-card">
+                        <h4>SQL and Database Management</h4>
+                        <p>Issued by Udemy (2021)</p>
+                        <img src="certificates/sql-database.png" alt="SQL Certificate">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects py-5 bg-dark text-light">
+        <div class="container text-center">
+            <h2 class="section-title">Projects</h2>
+            <div class="row projects-carousel">
+                <!-- Project Card Template -->
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Stock Analysis Project</h5>
+                            <p>Predicted stock trends with 75% accuracy using Python and Scikit-learn.</p>
+                            <button class="btn btn-secondary" onclick="downloadProject('stock')">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Titanic Dataset</h5>
+                            <p>Built survival prediction model with 80% accuracy using machine learning.</p>
+                            <button class="btn btn-secondary" onclick="downloadProject('titanic')">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Number Analysis</h5>
+                            <p>Performed anomaly detection on datasets with 78% accuracy.</p>
+                            <button class="btn btn-secondary" onclick="downloadProject('number')">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <h5 class="card-title">E-commerce Sales Prediction</h5>
+                            <p>Developed a regression model to predict e-commerce sales trends.</p>
+                            <button class="btn btn-secondary" onclick="downloadProject('ecommerce')">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Weather Forecasting</h5>
+                            <p>Created a weather prediction system using machine learning techniques.</p>
+                            <button class="btn btn-secondary" onclick="downloadProject('weather')">Download</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 project-card">
+                    <div class="card bg-dark border-light">
+                        <div class="card-body">
+                            <h5 class="card-title">Social Media Sentiment Analysis</h5>
+                            <p>Analyzed social media posts for sentiment trends using NLP techniques.</p>
+                            <button class="btn btn-secondary" onclick="downloadProject('sentiment')">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5 text-center">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="contact-icons">
+                <a href="mailto:sagar24@iitk.ac.in" class="contact-link" target="_blank">
+                    <i class="fas fa-envelope"></i> Gmail
+                </a>
+                <a href="https://linkedin.com/in/sagar-kumar" class="contact-link" target="_blank">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="https://github.com/sagar-kumar" class="contact-link" target="_blank">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://instagram.com/your-profile" class="contact-link" target="_blank">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-3">
+        <p>&copy; 2025 Sagar Kumar. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
